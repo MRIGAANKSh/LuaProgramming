@@ -1,0 +1,14 @@
+//path based
+"E:\Program Files\Java\jdk-24\bin\keytool.exe" -genkeypair -v -keystore my-release-key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias my-key-alias
+
+
+//for everyone 
+keytool -genkeypair -v -keystore my-release-key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias my-key-alias
+
+
+//path based
+java -jar "C:\Users\Intern\Desktop\game\uber-apk-signer-1.3.0.jar" --apks "C:\Users\Intern\Desktop\game\your_game.apk"
+
+
+//for everyone 
+java -jar "<path-to-uber-apk-signer>\uber-apk-signer-1.3.0.jar" --apks "<path-to-apk>\your_game.apk"
